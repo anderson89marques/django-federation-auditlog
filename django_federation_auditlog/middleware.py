@@ -21,7 +21,7 @@ class AuditlogMiddleware(MiddlewareMixin):
         if not user.is_authenticated:
             jwt_authentication = JWTTokenUserAuthentication()
             header = jwt_authentication.get_header(request)
-            if jwt_authentication.get_raw_token(header):
+            if header and jwt_authentication.get_raw_token(header):
                 token_user, _ = jwt_authentication.authenticate(request)
                 User = get_user_model()
                 user = User(
