@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "auditlog"
+name = "django-federation-auditlog"
 version = "0.1.0"
 description = ""
 authors = ["Anderson Marques <anderson89marques@gmail.com>"]
