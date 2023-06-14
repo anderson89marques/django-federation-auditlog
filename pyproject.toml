@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-federation-auditlog"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Anderson Marques <anderson89marques@gmail.com>"]
 readme = "README.md"

@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class IauditlogConfig(AppConfig):
-    name = 'iauditlog'
+class django_federation_auditlogConfig(AppConfig):
+    name = 'django_federation_auditlog'

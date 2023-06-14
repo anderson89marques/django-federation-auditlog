@@ -2,7 +2,7 @@ import threading
 import time
 from functools import partial
 
-from iauditlog.models import LogEntry
+from django_federation_auditlog.models import LogEntry
 from django.apps import apps
 from django.conf import settings
 from django.contrib.auth import get_user_model

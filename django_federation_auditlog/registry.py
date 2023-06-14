@@ -24,7 +24,11 @@ class AuditlogModelRegistry:
         delete: bool = True,
         custom: Optional[Dict[ModelSignal, Callable]] = None,
     ):
-        from iauditlog.receivers import log_create, log_delete, log_update
+        from django_federation_auditlog.receivers import (
+            log_create,
+            log_delete,
+            log_update,
+        )
 
         self._registry = {}
         self._signals = {}

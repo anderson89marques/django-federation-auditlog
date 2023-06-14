@@ -16,7 +16,7 @@ def track_field(field):
     :return: Whether the given field should be tracked.
     :rtype: bool
     """
-    from iauditlog.models import LogEntry
+    from django_federation_auditlog.models import LogEntry
 
     # Do not track many to many relations
     if field.many_to_many:
@@ -100,7 +100,7 @@ def model_instance_diff(old, new, fields_to_check=None):
              as value.
     :rtype: dict
     """
-    from iauditlog.registry import auditlog
+    from django_federation_auditlog.registry import auditlog
 
     if not (old is None or isinstance(old, Model)):
         raise TypeError(

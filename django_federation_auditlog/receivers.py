@@ -1,7 +1,7 @@
 import json
 
-from iauditlog.diff import model_instance_diff
-from iauditlog.models import LogEntry
+from django_federation_auditlog.diff import model_instance_diff
+from django_federation_auditlog.models import LogEntry
 
 
 def log_create(sender, instance, created, **kwargs):

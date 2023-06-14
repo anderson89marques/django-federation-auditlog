@@ -6,7 +6,7 @@ from django.urls.exceptions import NoReverseMatch
 from django.utils.html import format_html
 from django.utils.safestring import mark_safe
 
-from iauditlog.models import LogEntry
+from django_federation_auditlog.models import LogEntry
 
 MAX = 75
 
