@@ -300,7 +300,7 @@ class LogEntry(models.Model):
         :return: The changes recorded in this log entry intended for display to users as a dictionary object.
         """
         # Get the model and model_fields
-        from auditlog.registry import auditlog
+        from django_federation_auditlog.registry import auditlog
 
         model = self.content_type.model_class()
         model_fields = auditlog.get_model_fields(model._meta.model)
