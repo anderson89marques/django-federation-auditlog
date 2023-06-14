@@ -2,7 +2,7 @@ from django.contrib import admin
 
 from django_federation_auditlog.models import LogEntry
 from django_federation_auditlog.mixins import LogEntryAdminMixin
-from django_federation_auditlog.filters import ResourceTypeFilter
+from auditlog.filters import ResourceTypeFilter
 
 
 @admin.register(LogEntry)
