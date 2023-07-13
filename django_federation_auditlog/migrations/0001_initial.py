@@ -2,7 +2,6 @@
 
 from django.db import migrations, models
 import django.db.models.deletion
-import django_jsonfield_backport.models
 
 
 class Migration(migrations.Migration):
@@ -74,7 +73,7 @@ class Migration(migrations.Migration):
                 ),
                 (
                     'additional_data',
-                    django_jsonfield_backport.models.JSONField(
+                    models.JSONField(
                         blank=True, null=True, verbose_name='additional data'
                     ),
                 ),
