@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-federation-auditlog"
-version = "1.0.0"
+version = "1.1.0"
 description = ""
 authors = ["Anderson Marques <anderson89marques@gmail.com>"]
 readme = "README.md"
@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.7"
 djangorestframework = "^3.11"
-djangorestframework-simplejwt = "==5.0.0"
+djangorestframework-simplejwt = "^5.2"
 django-auditlog = "==2.0.0"
 
 [tool.poetry.dev-dependencies]
